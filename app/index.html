@@ -1,0 +1,717 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Preferences</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+    
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div id="content">
+
+      <ul id="tabs" class="sidebar" data-tabs="tabs">
+          <a href="#general" data-toggle="tab" id="tab-general">
+            <li>
+              <div class="category-icon"></div>
+              <div class="tab-label">General</div>
+            </li>
+          </a>
+          <a href="#downloads-links" data-toggle="tab" id="tab-downloads-links">
+            <li>
+              <div class="category-icon"></div>
+              <div class="tab-label">Downloads & Links</div>
+            </li>
+          </a>
+          <a href="#firefox-account" data-toggle="tab" id="tab-firefox-account">
+            <li>
+              <div class="category-icon"></div>
+              <div class="tab-label">Firefox Account</div>
+            </li>
+          </a>
+          <a href="#privacy-security" data-toggle="tab" id="tab-privacy-security">
+            <li>
+              <div class="category-icon"></div>
+              <div class="tab-label">Privacy & Security</div>
+            </li>
+          </a>
+          <a href="#updates" data-toggle="tab" id="tab-updates">
+            <li>
+              <div class="category-icon"></div>
+              <div class="tab-label">Updates</div>
+            </li>
+          </a>
+      </ul>
+      
+      <div id="my-tab-content" class="tab-content">
+          <!-- General -->
+          <div class="tab-pane active" id="general">
+            <div class="help"></div>
+            <h1>General</h1>
+            <hr/>
+
+            <section>
+              <h2>Startup</h2>
+              <div class="check-box">
+                <input type="checkbox" value="None" id="check-box1" name="check" checked />
+                <label for="check-box1"></label>
+              </div>
+              <label class="check-box-label">Always check if Firefox is your default browser</label>
+              <br/><br/>
+              <span class="indent bold">Firefox is not your default browser</span>
+              <button class="right">Make Default</button>
+              <br/><br/>
+              <span>When Firefox starts:</span>
+              <div class="select" style="width: 80%">
+                <select>
+                  <option value="op1">Show my home page</option>
+                  <option value="op2">Show a blank page</option>
+                  <option value="op3">Show my windows and tabs from last time</option>
+                </select> 
+                <div class="select__arrow"></div>
+              </div>
+              <span style="margin-left: 57px">Home Page:</span>
+              <input type="text" value="https:/www.google.com.tw" style="width: 80%"></input>
+              <br/><br/>
+              <button class="right large">Use Current Pages</button>
+              <button class="right large">Use Bookmark...</button>
+              <button class="right large">Restore to Default</button>
+              <br/><br/>
+            </section>
+
+            <section>
+              <h2>Default Search Engine</h2>
+              <p>Choose your default search engine. Nightly uses it in the location bar, search bar, and start page.</p>
+              <div class="select">
+                <select>
+                  <option value="yahoo">Yahoo</option>
+                  <option value="google">Google</option>
+                  <option value="bing">Bing</option>
+                  <option value="amazon">Amazon.com</option>
+                  <option value="duckduckgo">DuckDuckGo</option>
+                  <option value="ebay">eBay</option>
+                  <option value="twitter">Twitter</option>
+                  <option value="wiki">Wikipedia (en)</option>
+                </select> 
+                <div class="select__arrow"></div>
+              </div>
+              <br/>
+              <div class="check-box">
+                <input type="checkbox" value="None" id="check-box2" name="check" checked />
+                <label for="check-box2"></label>
+              </div>
+              <label class="check-box-label">Provide search suggestions</label>
+            </section>
+            
+            <section>
+              <h2>One-click search engines</h2>
+              <p>The search bar lets you search alternate engines directly. Choose which ones to display.</p>
+              <div class="icons" id="amazon" title="Amazon.com"></div>
+              <div class="icons" id="bing" title="Bing"></div>
+              <div class="icons" id="duckduckgo" title="DuckDuckGo"></div>
+              <div class="icons" id="ebay" title="eBay"></div>
+              <div class="icons" id="google" title="Google"></div>
+              <div class="icons" id="twitter" title="Twitter"></div>
+              <div class="icons" id="wiki" title="Wikipedia (en)"></div>
+              <div class="icons" id="yahoo" title="Yahoo"></div>
+
+              <button class="right">Edit</button>
+            </section>
+
+            <section>
+              <h2>Tabs</h2>
+              <div class="check-box">
+                <input type="checkbox" value="None" id="check-box-tab1" name="check" />
+                <label for="check-box-tab1"></label>
+              </div>
+              <label class="check-box-label">Ctrl+Tab cycles through tabs in recently used order</label>
+              <div class="check-box">
+                <input type="checkbox" value="None" id="check-box-tab2" name="check" checked />
+                <label for="check-box-tab2"></label>
+              </div>
+              <label class="check-box-label">Open new windows in a new tab instead</label>
+              <div class="check-box">
+                <input type="checkbox" value="None" id="check-box-tab3" name="check" />
+                <label for="check-box-tab3"></label>
+              </div>
+              <label class="check-box-label">When I open a link in a new tab, switch to it immediately</label>
+            </section>
+
+            <section>
+              <h2>Accessibility</h2>
+              <div class="check-box">
+                <input type="checkbox" value="None" id="check-box-acc1" name="check" />
+                <label for="check-box-acc1"></label>
+              </div>
+              <label class="check-box-label">Always use the cursor keys to navigate within pages</label>
+              <div class="check-box">
+                <input type="checkbox" value="None" id="check-box-acc2" name="check" checked />
+                <label for="check-box-acc2"></label>
+              </div>
+              <label class="check-box-label">Search for text when I start typing</label>
+              <div class="check-box">
+                <input type="checkbox" value="None" id="check-box-acc3" name="check" />
+                <label for="check-box-acc3"></label>
+              </div>
+              <label class="check-box-label">Warn me when websites try to redirect or reload the page</label>
+            </section>
+            
+            <div class="toggle">
+              <section>
+                  <h2>Language & Check spelling</h2>
+                  <p>Choose your preferred language for displaying pages</p>
+                  <div class="check-box">
+                    <input type="checkbox" value="None" id="check-box-lan" name="check" checked />
+                    <label for="check-box-lan"></label>
+                  </div>
+                  <label class="check-box-label">Check my spellings as I type</label>
+              </section>
+
+              <section>
+                  <h2>Fonts & Colours</h2>
+                  <span>Default font:</span>
+                  <div class="select" style="width: 30%">
+                    <select>
+                      <option value="op1">Times</option>
+                      <option value="op2">Roboto</option>
+                      <option value="op3">Helvetica</option>
+                    </select> 
+                    <div class="select__arrow"></div>
+                  </div>
+                  <span>Size:</span>
+                  <div class="select">
+                    <select>
+                      <option value="op1">16</option>
+                      <option value="op2">18</option>
+                      <option value="op3">20</option>
+                      <option value="op4">24</option>
+                    </select> 
+                    <div class="select__arrow"></div>
+                  </div>
+              </section>
+              <section style="margin-top:18px">
+                  <h2>Browsing</h2>
+                  <div class="check-box">
+                    <input type="checkbox" value="None" id="check-box-bro1" name="check" checked />
+                    <label for="check-box-bro1"></label>
+                  </div>
+                  <label class="check-box-label">Use autoscrolling</label>
+                  <div class="check-box">
+                    <input type="checkbox" value="None" id="check-box-bro2" name="check" checked />
+                    <label for="check-box-bro2"></label>
+                  </div>
+                  <label class="check-box-label">Use smooth scrolling</label>
+                  <div class="check-box">
+                    <input type="checkbox" value="None" id="check-box-bro3" name="check" checked />
+                    <label for="check-box-bro3"></label>
+                  </div>
+                  <label class="check-box-label">Use hardware acceleration when available</label>
+              </section>
+            </div>
+
+            <hr style="margin-bottom: 10px"/>
+            <p class="link more">Show more settings...</p>
+          </div>
+          <!-- Downloads & Links -->
+          <div class="tab-pane" id="downloads-links">
+            <div class="help"></div>
+            <h1>Downloads & Links</h1>
+            <hr></hr>
+            <section>
+              <h2>Downloads</h2>
+              <div class="radio-button">
+                <input type="radio" value="None" id="radio-button-down1" name="check-download" checked />
+                <label for="radio-button-down1"></label>
+              </div>
+              <label class="radio-button-label">Save files to</label>
+              <input type="text" value="Downloads" id="input-downloads" style="top:-5px; left: 10px; position: relative; width: 66.2%"></input>
+              <button class="right" style="margin-top: -2px;" id="button-downloads">Choose...</button>
+              <br/>
+              <div class="radio-button">
+                <input type="radio" value="None" id="radio-button-down2" name="check-download" />
+                <label for="radio-button-down2"></label>
+              </div>
+              <label class="radio-button-label">Always ask me where to save files</label>
+
+            </section>
+            <section>
+              <h2>File Type Handler</h2>
+              <p>Choose how Firefox handles the files you access from the Web.</p>
+              <input type="text" value="Search by file type or application" class="search"></input>
+              <div class="table">
+                <div class="table-head">
+                  <div class="col">File Type</div><div class="col">Default Action</div>
+                </div>
+                <div class="file-list">
+                  <div class="col">pdf</div><div class="col">Preview with Firefox</div>
+                </div>
+              </div>
+            </section>
+            <section>
+              <h2>Link Type Handler</h2>
+              <p>Choose what happens when you select a link that contains a Web protocol (for actions like sending email or creating a calendar item.)</p>
+              <input type="text" value="Search any protocol or application" class="search"></input>
+              <div class="table">
+                <div class="table-head">
+                  <div class="col">File Type</div><div class="col">Default Action</div>
+                </div>
+                <div class="file-list">
+                  <div class="col">mailto</div><div class="col">Open with Gmail</div>
+                </div>
+                <div class="file-list">
+                  <div class="col">irc</div><div class="col">Open with Mibbit</div>
+                </div>
+                <div class="file-list">
+                  <div class="col">webcal</div><div class="col">Open with 30 boxes</div>
+                </div>
+              </div>
+            </section>
+            <section>
+              
+            </section>
+          </div>
+          <!-- Firefox Account -->
+          <div class="tab-pane" id="firefox-account">
+            <div class="help"></div>
+            <h1>Firefox Account</h1>
+            <hr></hr>
+            <section>
+              <div id="sync"></div>
+              <div class="account">
+                <div class="picture"></div>
+                <div class="profile">
+                  <p>jalin@mozilla.com</p>
+                  <button style="margin: 0">Disconnect...</button><span class="link learn-more">Manage Account</span>
+                </div>
+              </div>
+            </section>
+            <section>
+              <h2>Synchronise across all devices</h2>
+              <div style="width: 40%; display:inline-block">
+                <div class="check-box">
+                  <input type="checkbox" value="None" id="check-box-sync1" name="check" checked />
+                  <label for="check-box-sync1"></label>
+                </div>
+                <label class="check-box-label">Tabs</label>
+                <div class="check-box">
+                  <input type="checkbox" value="None" id="check-box-sync2" name="check" checked />
+                  <label for="check-box-sync2"></label>
+                </div>
+                <label class="check-box-label">Bookmarks</label>
+                <div class="check-box">
+                  <input type="checkbox" value="None" id="check-box-sync3" name="check" checked />
+                  <label for="check-box-sync3"></label>
+                </div>
+                <label class="check-box-label">Passwords</label>
+              </div>
+              <div style="width: 40%; display:inline-block">
+                <div class="check-box">
+                  <input type="checkbox" value="None" id="check-box-sync4" name="check" checked />
+                  <label for="check-box-sync4"></label>
+                </div>
+                <label class="check-box-label">History</label>
+                <div class="check-box">
+                  <input type="checkbox" value="None" id="check-box-sync5" name="check" checked />
+                  <label for="check-box-sync5"></label>
+                </div>
+                <label class="check-box-label">Add-ons</label>
+                <div class="check-box">
+                  <input type="checkbox" value="None" id="check-box-sync6" name="check" checked />
+                  <label for="check-box-sync6"></label>
+                </div>
+                <label class="check-box-label">Preferences</label>
+              </div>
+            </section>
+            <section>
+              <h2>Device Name</h2>
+              <input type="text" value="MacBook-Pro" style="width: 73%" disabled></input>
+              <button class="right" style="margin-top: 1px">Change Device Name...</button>
+            </section>
+            <section>
+              <p>Download Firefox for <span class="androidLink"></span> <span class="link">Android</span> or <span class="iOSLink"></span><span class="link">iOS</span> to sync with your mobile device.</p>
+            </section>
+            <section>
+              <p class="link">Terms of Service</p>
+              <p class="link">Privacy Notice</p>
+            </section>
+          </div>
+          <!-- Privacy & Security -->
+          <div class="tab-pane" id="privacy-security">
+            <div class="help"></div>
+            <h1>Privacy & Security</h1>
+            <hr></hr>
+            <section>
+              <h2>History</h2>
+              <p>Clear your recent history</p>
+              <button class="right" style="margin-top: -25px">Clear...</button>
+              
+              <div class="check-box">
+                <input type="checkbox" value="None" id="check-box-clear1" name="check" checked />
+                <label for="check-box-clear1"></label>
+              </div>
+              <label class="check-box-label">Remember my browsing and download history</label>
+
+              <div class="check-box" style="top:5px">
+                <input type="checkbox" value="None" id="check-box-clear2" name="check" checked />
+                <label for="check-box-clear2"></label>
+              </div>
+              <label class="check-box-label">Allow storing cookies and site data:</label>
+              
+              <div class="select" id="dropdown-clear2" style="width: 35%">
+                <select>
+                  <option value="op1">Always</option>
+                  <option value="op2">Never</option>
+                </select> 
+                <div class="select__arrow"></div>
+              </div>
+
+              <button class="right" style="margin-top: 0px; margin-bottom: 0px">Exceptions...</button>
+
+              <p class="indent">Cookies and site data are currently using 30 MB of disk space <span class="link learn-more">Learn more</span></p>
+              <button class="right" style="margin-top: -35px; margin-bottom: 0px">Settings...</button>
+
+              <div class="check-box">
+                <input type="checkbox" value="None" id="check-box-clear3" name="check" />
+                <label for="check-box-clear3"></label>
+              </div>
+              <label class="check-box-label">Clear history when Firefox closes</label>
+              <button class="right disabled" style="margin-top: 0px">Settings...</button>
+            </section>
+
+            <section>
+              <h2>Forms & Passwords</h2>
+              <button class="right" style="margin-top: -25px">Exceptions...</button>
+              <div class="check-box">
+                <input type="checkbox" value="None" id="check-box-form1" name="check" checked />
+                <label for="check-box-form1"></label>
+              </div>
+              <label class="check-box-label">Remember search and form history</label>
+              <div class="check-box">
+                <input type="checkbox" value="None" id="check-box-form2" name="check" />
+                <label for="check-box-form2"></label>
+              </div>
+              <label class="check-box-label">Remember logins and passwords for sites</label>
+              <button class="right" style="margin-bottom: 0px">Manage...</button>
+              <div class="check-box">
+                <input type="checkbox" value="None" id="check-box-form3" name="check" />
+                <label for="check-box-form3"></label>
+              </div>
+              <label class="check-box-label">Use a master password</label>
+              <button class="right disabled" style="margin-top: 0px">Change Master Password...</button>
+            </section>
+
+            <section>
+              <h2>Private Browsing</h2>
+              <div class="check-box">
+                <input type="checkbox" value="None" id="check-box-private" name="check" />
+                <label for="check-box-private"></label>
+              </div>
+              <label class="check-box-label">Always use private browsing mode</label>
+            </section>
+
+            <section>
+              <h2>Use Tracking Protection <span class="link learn-more">Learn more</span></h2>
+              <button class="right" style="margin-top: -25px">Exceptions...</button>
+              
+              <div class="radio-button">
+                <input type="radio" value="None" id="radio-button1" name="check-track" checked />
+                <label for="radio-button1"></label>
+              </div>
+              <label class="radio-button-label">Always</label>
+              <br/>
+              <button class="right" style="margin-top: -20px">Change Block List</button>
+
+              <div class="radio-button">
+                <input type="radio" value="None" id="radio-button2" name="check-track" />
+                <label for="radio-button2"></label>
+              </div>
+              <label class="radio-button-label">Only in private windows</label>
+              <br/>
+              <div class="radio-button">
+                <input type="radio" value="None" id="radio-button3" name="check-track" />
+                <label for="radio-button3"></label>
+              </div>
+              <label class="radio-button-label">Never</label>
+              <br/>
+              <p>You can also <span class="link">manage your Do Not Track settings.</span></p>
+            </section>
+
+            <section>
+              <h2>Pop-ups</h2>
+              <div class="check-box">
+                <input type="checkbox" value="None" id="check-box-pop" name="check" checked />
+                <label for="check-box-pop"></label>
+              </div>
+              <label class="check-box-label">Block popup windows</label>
+              <button class="right" style="margin-top: 0px">Exceptions...</button>
+            </section>
+
+            <section>
+              <h2>Notifications</h2>
+              <span>Choose which sites are allowed to send you notifications <span class="link learn-more">Learn more</span></span>
+              <button class="right" style="margin-top: -4px">Choose...</button>
+            </section>
+
+            <section>
+              <h2>Location Bar</h2>
+              <p>When using the location bar, suggest:</p>
+              <div class="check-box">
+                <input type="checkbox" value="None" id="check-box-loc1" name="check" checked />
+                <label for="check-box-loc1"></label>
+              </div>
+              <label class="check-box-label">History</label>
+              <div class="check-box">
+                <input type="checkbox" value="None" id="check-box-loc2" name="check" checked />
+                <label for="check-box-loc2"></label>
+              </div>
+              <label class="check-box-label">Bookmarks</label>
+              <div class="check-box">
+                <input type="checkbox" value="None" id="check-box-loc3" name="check" checked />
+                <label for="check-box-loc3"></label>
+              </div>
+              <label class="check-box-label">Open tabs</label>
+            </section>
+            <div class="toggle">
+              <section>
+                <h2>Security Options</h2>
+                <div class="check-box">
+                  <input type="checkbox" value="None" id="check-box-sec1" name="check" checked />
+                  <label for="check-box-sec1"></label>
+                </div>
+                <label class="check-box-label">Warn me when sites try to install add-ons</label>
+                <button class="right" style="margin-top: -4px">Exceptions...</button>
+                <div class="check-box">
+                  <input type="checkbox" value="None" id="check-box-sec2" name="check" checked />
+                  <label for="check-box-sec2"></label>
+                </div>
+                <label class="check-box-label">Block dangerous and deceptive content</label>
+                <div class="check-box indent" style="margin: 12px 0">
+                  <input type="checkbox" value="None" id="check-box-sec3" name="check" checked="true" />
+                  <label for="check-box-sec3"></label>
+                </div>
+                <label class="check-box-label indent2">Block dangerous downloads</label>
+                <div class="check-box indent" style="margin: 12px 0">
+                  <input type="checkbox" value="None" id="check-box-sec4" name="check" checked="true" />
+                  <label for="check-box-sec4"></label>
+                </div>
+                <label class="check-box-label indent2">Warn me about unwanted and uncommon software</label>
+              </section>
+              <section>
+                <h2>Certificates</h2>
+                <p>When a server requests my personal certificates:</p>
+                <div class="radio-button">
+                  <input type="radio" value="None" id="radio-button-cer1" name="check-cer" />
+                  <label for="radio-button-cer1"></label>
+                </div>
+                <label class="radio-button-label">Select one automatically</label>
+                <br/>
+                <div class="radio-button">
+                  <input type="radio" value="None" id="radio-button-cer2" name="check-cer" checked/>
+                  <label for="radio-button-cer2"></label>
+                </div>
+                <label class="radio-button-label">Ask me everytime</label>
+                <br/>
+                <div class="check-box">
+                  <input type="checkbox" value="None" id="check-box-cer3" name="check-cer" checked />
+                  <label for="check-box-cer3"></label>
+                </div>
+                <label class="check-box-label">Query OCSP responder servers to confirm the current validity of certificates</label>
+                <button class="right" style="margin-top: -4px">View Certificates</button>
+                <br/><br/>
+                <button class="right" style="margin-top: -4px">Security Devices</button>
+                <br/>
+              </section>
+              <section>
+                <h2>DRM content</h2>
+                <div class="check-box">
+                  <input type="checkbox" value="None" id="check-box-drm" name="check" checked />
+                  <label for="check-box-drm"></label>
+                </div>
+                <label class="check-box-label">Play DRM content</label>
+                <span class="right learn-more link" style="margin: 0">Learn more</span>
+              </section>
+              <section>
+                <h2>Connection</h2>
+                <span>Configure how Firefox connects to the Internet</span>
+                <button class="right" style="margin-top: -4px">Settings...</button>
+              </section>
+
+            </div>
+            <hr style="margin-bottom: 10px"/>
+            <p class="link more">Show more settings...</p>
+          </div>
+
+          <!-- Updates -->
+          <div class="tab-pane" id="updates">
+            <div class="help"></div>
+            <h1>Updates</h1>
+            <hr></hr>
+            <section>
+              <h2>Firefox updates</h2>
+              <div class="radio-button">
+                <input type="radio" value="None" id="radio-button-up1" name="check" checked />
+                <label for="radio-button-up1"></label>
+              </div>
+              <label class="radio-button-label">Automatically install updates (recommended: improved security)</label>
+              <br/>
+              <div class="check-box indent">
+                <input type="checkbox" value="None" id="check-box-up1" name="check" checked />
+                <label for="check-box-up1"></label>
+              </div>
+              <label class="check-box-label indent2">Warn me if this will disable any of my add-ons</label>
+              <br/><br/>
+              <div class="radio-button">
+                <input type="radio" value="None" id="radio-button-up2" name="check" />
+                <label for="radio-button-up2"></label>
+              </div>
+              <label class="radio-button-label">Check for updates, but let me choose whether to install them</label>
+              <br/>
+              <div class="radio-button">
+                <input type="radio" value="None" id="radio-button-up3" name="check" />
+                <label for="radio-button-up3"></label>
+              </div>
+              <label class="radio-button-label">Never check for updates (not recommended: security risk)</label>
+              <br/>
+              <button style="margin-left: 0">Show Update History</button>
+            </section>
+            <section>
+              <h2>Automatically update</h2>
+              <div class="check-box">
+                <input type="checkbox" value="None" id="check-box-up2" name="check" checked />
+                <label for="check-box-up2"></label>
+              </div>
+              <label class="check-box-label">Search Engines</label>
+            </section>
+            <section class="p-margin">
+              <h2>Reports</h2>
+              <div class="check-box">
+                <input type="checkbox" value="None" id="check-box-re1" name="check" checked />
+                <label for="check-box-re1"></label>
+              </div>
+              <label class="check-box-label"><strong>Enable Firefox Health Report</strong></label>
+              <br/>
+              <p class="indent">Helps you understand your browser performance and shares data with Mozilla about your browser health</p>
+              <span class="link learn-more right">Learn More</span>
+              <div class="check-box indent">
+                <input type="checkbox" value="None" id="check-box-re2" name="check" />
+                <label for="check-box-re2"></label>
+              </div>
+              <label class="check-box-label indent2"><strong>Share additional data (i.e., Telemetry)</strong></label>
+              <br/>
+              <p class="indent2">Shares performance, usage, hardware and customization data about your browser with Mozilla to help us make Firefox better</p>
+              <span class="link learn-more right">Learn More</span>
+              <div class="check-box">
+                <input type="checkbox" value="None" id="check-box-re3" name="check" checked />
+                <label for="check-box-re3"></label>
+              </div>
+              <label class="check-box-label"><strong>Enable Crash Reporter</strong></label>
+              <p class="indent">Firefox submits crash reports to help Mozilla make your browser more stable and secure</p>
+              <span class="link learn-more right">Learn More</span>
+            </section>
+          </div>
+      </div>
+    </div> 
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    
+    <!-- build:js(.) scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+    
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  
+    
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('#tabs').tab();
+        });
+        $(function(){
+          $('.sidebar li').click(function(){
+              $('.active').removeClass('active');
+              $(this).addClass('active');
+          });
+
+          var display = false;
+          $('.more').click(function(){
+              // $('.hide').css('display', 'block');
+              $('.toggle').toggle();
+              if(!display) {
+                $('.more').html("Hide more settings...");
+                display = true;
+              }
+              else {
+                $('.more').html("Show more settings...");
+                display = false;
+              }
+          });
+        });
+
+        $(function(){
+          var hash = window.location.hash;
+          if(hash != "") {
+            $('a[href="'+ hash +'"] li').addClass('active');
+          } else {
+            $('a[href="#general"] li').addClass('active');
+          }
+
+          hash && $('ul#tabs a[href="' + hash + '"]').tab('show');
+
+          $('#tabs a').click(function (e) {
+            $(this).tab('show');
+            var scrollmem = $('body').scrollTop() || $('html').scrollTop();
+            window.location.hash = this.hash;
+            $('html,body').scrollTop(scrollmem);
+          });
+        });
+    </script>   
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+  </body>
+</html>
