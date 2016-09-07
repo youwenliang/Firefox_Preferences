@@ -149,6 +149,10 @@ a:hover {
   list-style: none;
 }
 
+.tab-pane {
+  padding-bottom: 40px;
+}
+
 #tab-general  .category-icon {
   background-image: url("../images/icons.svg#general");
 }

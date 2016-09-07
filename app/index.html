@@ -243,6 +243,7 @@
               </div>
               <label class="radio-button-label">Save files to</label>
               <input type="text" value="Downloads" id="input-downloads" readonly="true" style="top:-5px; left: 10px; position: relative; width: 66.2%"></input>
+              <input type="file" webkitdirectory directory multiple/>
               <button class="right" style="margin-top: -2px;" id="button-downloads">Choose...</button>
               <br/>
               <div class="radio-button">
@@ -662,6 +663,9 @@
     <script type="text/javascript">
         jQuery(document).ready(function ($) {
             $('#tabs').tab();
+            $('#tabs a').click(function(){
+              $('html,body').scrollTop(0);
+            })
         });
         $(function(){
           $('.sidebar li').click(function(){
