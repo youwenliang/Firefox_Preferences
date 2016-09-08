@@ -366,7 +366,10 @@ input[type=text] {
     color: #969696;
     border: 1px #ddd solid;
     background-color: rgba(0,0,0,0);
+  }
 
+  &:focus {
+    border: 1px $primary-color solid;
   }
 
   &.search {
