@@ -99,9 +99,9 @@
             </section>
 
             <section>
-              <h2>Default Search Engine</h2>
-              <p>Choose your default search engine. Nightly uses it in the location bar, search bar, and start page.</p>
-              <div class="select">
+              <h2>Search Engines</h2>
+              <span>Default search engine:</span>
+              <div class="select" style="margin-left: 66px; width: 234px">
                 <select>
                   <option value="yahoo">Yahoo</option>
                   <option value="google">Google</option>
@@ -114,16 +114,21 @@
                 </select> 
                 <div class="select__arrow"></div>
               </div>
-              <div class="check-box" style="margin: 0">
-                <input type="checkbox" value="None" id="check-box2" name="check" checked />
-                <label for="check-box2"></label>
+              <br/>
+              <span>Provide search suggestions in:</span>
+              <div class="select" style="margin-left: 10px">
+                <select>
+                  <option value="searchbar_location_bar">Search bar and location bar</option>
+                  <option value="searchbar">Search bar</option>
+                  <option value="none">None</option>
+                </select> 
+                <div class="select__arrow"></div>
               </div>
-              <label class="check-box-label">Provide search suggestions</label>
             </section>
             
             <section>
-              <h2>One-click search engines</h2>
-              <p>The search bar lets you search alternate engines directly.</p>
+              <!-- <h2>One-click search engines</h2> -->
+              <p>Choose which search engines to display in search bar.</p>
               <div class="icons" id="amazon" title="Amazon.com"></div>
               <div class="icons" id="bing" title="Bing"></div>
               <div class="icons" id="duckduckgo" title="DuckDuckGo"></div>
@@ -133,7 +138,9 @@
               <div class="icons" id="wiki" title="Wikipedia (en)"></div>
               <div class="icons" id="yahoo" title="Yahoo"></div>
 
-              <button class="right">Edit</button>
+              <button class="right">Choose...</button>
+              <br/><br/>
+              <p class="link">Add more search engines...</p>
             </section>
 
             <section>
@@ -379,7 +386,8 @@
               <div class="select" id="dropdown-clear2" style="width: 35%">
                 <select>
                   <option value="op1">Always</option>
-                  <option value="op2">Never</option>
+                  <option value="op2">Except for 3rd-party cookies</option>
+                  <option value="op3">Except for non-visited 3rd-party cookies</option>
                 </select> 
                 <div class="select__arrow"></div>
               </div>
@@ -566,6 +574,13 @@
             <hr></hr>
             <section>
               <h2>Firefox updates</h2>
+              <br/>
+              <p>
+                <span>Version 48.0.1 64-bit(2016-09-20)</span>
+                <button class="right" style="margin-top: -4px">Show Update History...</button>
+              </p>
+              <p>Firefox is up to date</p>
+              <br/>
               <div class="radio-button">
                 <input type="radio" value="None" id="radio-button-up1" name="check" checked />
                 <label for="radio-button-up1"></label>
