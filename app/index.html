@@ -89,7 +89,7 @@
                 </select> 
                 <div class="select__arrow"></div>
               </div>
-              <span style="margin-left: 55px">Home Page:</span>
+              <span style="margin-right: 55px">Home Page:</span>
               <input type="text" value="https:/www.google.com.tw" style="width: 80.4%"></input>
               <br/><br/>
               <button class="right large">Use Current Pages</button>
@@ -124,9 +124,6 @@
                 </select> 
                 <div class="select__arrow"></div>
               </div>
-            </section>
-            
-            <section>
               <!-- <h2>One-click search engines</h2> -->
               <p>Choose which search engines to display in search bar.</p>
               <div class="icons" id="amazon" title="Amazon.com"></div>
@@ -189,11 +186,12 @@
                     <input type="checkbox" value="None" id="check-box-lan" name="check" checked />
                     <label for="check-box-lan"></label>
                   </div>
+                  <button class="right" style="margin-top: -35px">Choose...</button>
                   <label class="check-box-label">Check my spellings as I type</label>
               </section>
 
               <section>
-                  <h2>Fonts & Colours</h2>
+                  <h2>Fonts & Colors</h2>
                   <span>Default font:</span>
                   <div class="select" style="width: 30%">
                     <select>
@@ -213,6 +211,9 @@
                     </select> 
                     <div class="select__arrow"></div>
                   </div>
+                  <button class="right" style="margin-top: 1px">Advanced...</button>
+                  <br/>
+                  <button class="right" style="margin-top: -10px">Colors...</button>
               </section>
               <section style="margin-top:18px">
                   <h2>Browsing</h2>
@@ -306,7 +307,7 @@
               <div class="account">
                 <div class="picture"></div>
                 <div class="profile">
-                  <p>jalin@mozilla.com</p>
+                  <p id="random_email">jalin@mozilla.com</p>
                   <button style="margin: 0">Disconnect...</button><span class="link learn-more">Manage Account</span>
                 </div>
               </div>
@@ -574,7 +575,6 @@
             <hr></hr>
             <section>
               <h2>Firefox updates</h2>
-              <br/>
               <p>
                 <span>Version 48.0.1 64-bit(2016-09-20)</span>
                 <button class="right" style="margin-top: -4px">Show Update History...</button>
@@ -605,7 +605,7 @@
               </div>
               <label class="radio-button-label">Never check for updates (not recommended: security risk)</label>
               <br/>
-              <button style="margin-left: 0">Show Update History</button>
+              <!-- <button style="margin-left: 0">Show Update History</button> -->
             </section>
             <section>
               <h2>Automatically update</h2>

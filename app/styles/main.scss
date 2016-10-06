@@ -227,6 +227,27 @@ h2 {
   color: $content-text;
   font-weight: bold;
   margin: 5px 0;
+  text-transform: capitalize;
+
+  & + p {
+    margin-top: 10px;
+  }
+
+  & + span + div {
+    margin-top: 5px;
+  }
+
+  & + div {
+    margin-top: 5px; 
+  }
+
+  & + button + div {
+    margin-top: 5px;  
+  }
+
+  & + input {
+    margin-top: 5px;  
+  }
 }
 
 p, span {
@@ -298,6 +319,8 @@ section {
     top: 10px;
     background-color: #bac6cf;
     border-radius: 30px;
+    background-image: url(../images/default-avatar.svg);
+    background-size: contain;
   }
 
   & .profile {

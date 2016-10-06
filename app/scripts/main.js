@@ -1,6 +1,25 @@
 // jshint devel:true
 console.log('\'Allo \'Allo!');
 
+var email_list = [
+	"collier_karen@hotmail.com",
+	"blick_maryse@yahoo.com",
+	"eichmann.osbaldo@yahoo.com",
+	"mallory_medhurst@aniyah.io",
+	"murphy_estell@reinger.biz",
+	"rutherford.stephany@yahoo.com",
+	"jeramie_hermiston@gmail.com",
+	"annalise.nienow@hotmail.com",
+	"kaden_upton@yahoo.com",
+	"savion.hilll@gmail.com"
+]
+
+$(document).ready(function(){
+
+var email = email_list[Math.floor((Math.random() * 10))];
+$('#random_email').text(email);
+
+
 $('#radio-button-down1').change(function(){
 	if(this.checked) {
 		$('#input-downloads').attr('disabled', false);
@@ -104,3 +123,4 @@ $('#check-box-pop').change(function(){
 	}
 });
 
+});
